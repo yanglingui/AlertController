@@ -7,21 +7,33 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
-
+#import "YLGAlertView.h"
+@interface ViewController ()<UIActionSheetDelegate>
+@property(nonatomic,strong)UIAlertController *alertVc;
+@property(nonatomic,strong)YLGAlertView *alertV;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    //UIAlertControllerStyleAlert :alertView
+    //UIAlertControllerStyleActionSheet :actionSheet
+}
+- (IBAction)showAlertView:(id)sender {
+    //注意在使用的时候一定要把YLGAlertView设置为全局变量，否则的话YLGAlertView中的代理无法执行。
+    YLGAlertView *alertVi = [[YLGAlertView alloc] initWithTitle:@"AlertViewTitle" message:@"message" otherTitles:@[@"确定"] cancelBtnTitle:@"取消" destructiveBtnTitle:nil styleType:YLGAlertViewStyleAlert controller:self clickBlock:^(NSString *title) {
+         NSLog(@"%@",title);
+     }];
+     self.alertV = alertVi;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)showActionSheet:(id)sender {
+    //注意在使用的时候一定要把YLGAlertView设置为全局变量。
+    YLGAlertView *alertVi = [[YLGAlertView alloc] initWithTitle:@"请选择照片" message:nil otherTitles:@[@"从相册选择",@"拍照",@"小视屏"] cancelBtnTitle:@"取消" destructiveBtnTitle:@"删除" styleType:YLGAlertViewStyleActionSheet controller:self clickBlock:^(NSString *title) {
+        NSLog(@"%@",title);
+    }];
+    self.alertV = alertVi;
 }
-
 @end

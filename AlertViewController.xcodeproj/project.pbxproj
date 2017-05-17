@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E90E25DB1EA9A33C00ACBCCF /* YLGAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = E90E25DA1EA9A33C00ACBCCF /* YLGAlertView.m */; };
 		E90E93401E24BE9E00DE7F2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E90E933F1E24BE9E00DE7F2B /* main.m */; };
 		E90E93431E24BE9E00DE7F2B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E90E93421E24BE9E00DE7F2B /* AppDelegate.m */; };
 		E90E93461E24BE9E00DE7F2B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E90E93451E24BE9E00DE7F2B /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E90E25D91EA9A33C00ACBCCF /* YLGAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLGAlertView.h; sourceTree = "<group>"; };
+		E90E25DA1EA9A33C00ACBCCF /* YLGAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLGAlertView.m; sourceTree = "<group>"; };
 		E90E933B1E24BE9E00DE7F2B /* AlertViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlertViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90E933F1E24BE9E00DE7F2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E90E93411E24BE9E00DE7F2B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,6 +108,8 @@
 				E90E93421E24BE9E00DE7F2B /* AppDelegate.m */,
 				E90E93441E24BE9E00DE7F2B /* ViewController.h */,
 				E90E93451E24BE9E00DE7F2B /* ViewController.m */,
+				E90E25D91EA9A33C00ACBCCF /* YLGAlertView.h */,
+				E90E25DA1EA9A33C00ACBCCF /* YLGAlertView.m */,
 				E90E93471E24BE9E00DE7F2B /* Main.storyboard */,
 				E90E934A1E24BE9E00DE7F2B /* Assets.xcassets */,
 				E90E934C1E24BE9E00DE7F2B /* LaunchScreen.storyboard */,
@@ -270,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E90E25DB1EA9A33C00ACBCCF /* YLGAlertView.m in Sources */,
 				E90E93461E24BE9E00DE7F2B /* ViewController.m in Sources */,
 				E90E93431E24BE9E00DE7F2B /* AppDelegate.m in Sources */,
 				E90E93401E24BE9E00DE7F2B /* main.m in Sources */,
@@ -498,6 +504,7 @@
 				E90E936A1E24BE9F00DE7F2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E90E936B1E24BE9F00DE7F2B /* Build configuration list for PBXNativeTarget "AlertViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +513,7 @@
 				E90E936D1E24BE9F00DE7F2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E90E936E1E24BE9F00DE7F2B /* Build configuration list for PBXNativeTarget "AlertViewControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +522,7 @@
 				E90E93701E24BE9F00DE7F2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
